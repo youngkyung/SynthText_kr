@@ -53,6 +53,14 @@ Also, you can get the coordinate files of characters and words each
 - `ch_coords.txt`: Characters' each coordinate in scene-text image files
 - `wd_coords.txt`: Words' each coordinate in scene-text image files
 
+### Adding New Images
+Segmentation and depth-maps are required to use new images as background. Sample scripts for obtaining these are available [here](https://github.com/ankush-me/SynthText/tree/master/prep_scripts).
+
+* `predict_depth.m` MATLAB script to regress a depth mask for a given RGB image; uses the network of [Liu etal.](https://bitbucket.org/fayao/dcnf-fcsp/) However, more recent works (e.g., [this](https://github.com/iro-cp/FCRN-DepthPrediction)) might give better results.
+* `run_ucm.m` and `floodFill.py` for getting segmentation masks using [gPb-UCM](https://github.com/jponttuset/mcg).
+
+For an explanation of the fields in `dset.h5` (e.g.: `seg`,`area`,`label`), please check this [comment](https://github.com/ankush-me/SynthText/issues/5#issuecomment-274490044).
+
 ### Further Information
 Please refer to the paper for more information, or contact the author (email address in the paper).
 If you find errors for koreans, don't hesitate to give me an email: ygseo@korea.ac.kr
