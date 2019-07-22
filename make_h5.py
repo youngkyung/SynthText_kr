@@ -18,7 +18,7 @@ NUM_IMG = -1
 INSTANCE_PER_IMAGE = 1
 SECS_PER_IMG = 5 #max time per image in seconds
 
-CONFIG_LOCAL = {'im_dir'   : 'sample',
+CONFIG_LOCAL = {'im_dir'   : 'bg_img',
                 'depth_db' : 'depth.h5',
                 'seg_db'   : 'seg.h5',
                 'out_dir'  : 'gen',
