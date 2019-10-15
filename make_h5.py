@@ -82,7 +82,7 @@ def main(viz=False):
             img = np.array(img.resize(sz,Image.ANTIALIAS))
             seg = np.array(Image.fromarray(seg).resize(sz,Image.NEAREST))
 
-            print colorize(Color.RED,'%d of %d'%(i,end_idx-1), bold=True)
+            print(colorize(Color.RED,'%d of %d'%(i,end_idx-1), bold=True))
             res = RV3.render_text(img,depth,seg,area,label,
                                   ninstance=INSTANCE_PER_IMAGE,viz=viz)
             if len(res) > 0:
