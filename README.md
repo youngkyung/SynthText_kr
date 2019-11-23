@@ -32,6 +32,13 @@ The background image files are saved in `bg_img` directory. The following files 
   - **data/models/colors_new.cp**: Color-model (foreground/background text color model), learnt from the IIIT-5K word dataset.
   - **data/models**: Other cPickle files (**char\_freq.cp**: frequency of each character in the text dataset; **font\_px2pt.cp**: conversion from pt to px for various fonts: If you add a new font, make sure that the corresponding model is present in this file, if not you can add it by adapting `invert_font_size.py`).
 
+### Sample Korean Fonts
+
+There are some sample Korean fonts you can use like the following. If you want to use these fonts, you should update the `fonts/fontlist.txt` with their paths.
+`https://koreaoffice-my.sharepoint.com/:f:/g/personal/ygseo_korea_edu/EvnQDCsjGMFGp8RIpoECvZUBtZ1FV1Wf7kUkRvz9kZqecg?e=QuQ21Z`
+
+Note: I do not own the copyright to these fonts.
+
 ```
 python make_h5.py
 ```
