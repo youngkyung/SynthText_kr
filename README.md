@@ -35,6 +35,7 @@ The background image files are saved in `bg_img` directory. The following files 
 ### Sample Korean Fonts
 
 There are some sample Korean fonts you can use like the following. If you want to use these fonts, you should update the `fonts/fontlist.txt` with their paths.
+
 `https://koreaoffice-my.sharepoint.com/:f:/g/personal/ygseo_korea_edu/EvnQDCsjGMFGp8RIpoECvZUBtZ1FV1Wf7kUkRvz9kZqecg?e=QuQ21Z`
 
 Note: I do not own the copyright to these fonts.
