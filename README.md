@@ -24,14 +24,6 @@ The 8,000 background images used in the paper, along with their segmentation and
 
 Note: I do not own the copyright to these images.
 
-### Generating scene-text images with background
-
-The background image files are saved in `bg_img` directory. The following files are used to generate the images.
-  - **data/fonts**: several sample fonts (add more fonts to this folder and then update `fonts/fontlist.txt` with their paths). You must put Korean fonts, otherwise you cannot print out the letters in the picture properly.
-  - **data/newsgroup**: Text-source (from the News Group dataset). This can be subsituted with any text file. Look inside `text_utils.py` to see how the text inside this file is used by the renderer.
-  - **data/models/colors_new.cp**: Color-model (foreground/background text color model), learnt from the IIIT-5K word dataset.
-  - **data/models**: Other cPickle files (**char\_freq.cp**: frequency of each character in the text dataset; **font\_px2pt.cp**: conversion from pt to px for various fonts: If you add a new font, make sure that the corresponding model is present in this file, if not you can add it by adapting `invert_font_size.py`).
-
 ### Sample Korean Fonts
 
 There are some sample Korean fonts you can use like the following. If you want to use these fonts, you should update the `fonts/fontlist.txt` with their paths.
@@ -39,6 +31,14 @@ There are some sample Korean fonts you can use like the following. If you want t
 `https://koreaoffice-my.sharepoint.com/:f:/g/personal/ygseo_korea_edu/EvnQDCsjGMFGp8RIpoECvZUBtZ1FV1Wf7kUkRvz9kZqecg?e=QuQ21Z`
 
 Note: I do not own the copyright to these fonts.
+
+### Generating scene-text images with background
+
+The background image files are saved in `bg_img` directory. The following files are used to generate the images.
+  - **data/fonts**: several sample fonts (add more fonts to this folder and then update `fonts/fontlist.txt` with their paths). You must put Korean fonts, otherwise you cannot print out the letters in the picture properly.
+  - **data/newsgroup**: Text-source (from the News Group dataset). This can be subsituted with any text file. Look inside `text_utils.py` to see how the text inside this file is used by the renderer.
+  - **data/models/colors_new.cp**: Color-model (foreground/background text color model), learnt from the IIIT-5K word dataset.
+  - **data/models**: Other cPickle files (**char\_freq.cp**: frequency of each character in the text dataset; **font\_px2pt.cp**: conversion from pt to px for various fonts: If you add a new font, make sure that the corresponding model is present in this file, if not you can add it by adapting `invert_font_size.py`).
 
 ```
 python make_h5.py
